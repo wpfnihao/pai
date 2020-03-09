@@ -575,9 +575,7 @@ func (s *HivedScheduler) filterRoutine(args ei.ExtenderArgs) *ei.ExtenderFilterR
 		}
 
 		klog.Infof(logPfx + waitReason)
-		return &ei.ExtenderFilterResult{
-			Error: waitReason,
-		}
+		return &ei.ExtenderFilterResult{}
 	}
 }
 
